@@ -1,7 +1,7 @@
 
-from lib.movie import Movie
-from lib.movie_collection import MovieCollection
-from lib.storage import MovieStorage
+from models.movie import Movie
+from models.movie_collection import MovieCollection
+from utils.storage import MovieStorage
 
 
 def display_menu():
@@ -232,7 +232,7 @@ def view_statistics(collection):
 
 
 def main():
-    storage = MovieStorage("movies.json")
+    storage = MovieStorage("data/movies.json")
     collection = storage.load_movies()
 
     print("Welcome to MovieShelf!")

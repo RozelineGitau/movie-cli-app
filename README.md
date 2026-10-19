@@ -27,21 +27,23 @@ MovieShelf is a menu-based command-line application built with Python that helps
 
 ## Project Structure
 
-```text
-movie-cli-app/
+```
+├── data
+│   └── movies.json
 ├── main.py
-├── movies.json
-├── lib/
+├── models
 │   ├── __init__.py
 │   ├── media.py
-│   ├── movie.py
 │   ├── movie_collection.py
-│   └── storage.py
-├── tests/
-├── test_movie.py
+│   └── movie.py
+├── README.md
+├── requirements.txt
 ├── test_collection.py
+├── test_movie.py
 ├── test_storage.py
-└── README.md
+└── utils
+    ├── __init__.py
+    └── storage.py
 ```
 
 ## Getting Started
@@ -90,13 +92,6 @@ Enter the number corresponding to the operation you want to perform and follow t
 
 Movie details are stored in `movies.json` and loaded when the application starts again.
 
-## Running Tests
-
-If `pytest` is installed, run the tests from the project root:
-
-```bash
-python3 -m pytest
-```
 
 ## Learning Objectives
 
@@ -119,4 +114,4 @@ This project demonstrates practical application of:
 
 ## Author
 
-Developed as a Python learning project to practise object-oriented programming, data management, and command-line application development.
+Group 6
