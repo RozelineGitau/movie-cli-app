@@ -1,9 +1,9 @@
 
 from pathlib import Path
 
-from lib.movie import Movie
-from lib.movie_collection import MovieCollection
-from lib.storage import MovieStorage
+from models.movie import Movie
+from models.movie_collection import MovieCollection
+from utils.storage import MovieStorage
 
 
 storage = MovieStorage("test_movies.json")

@@ -1,5 +1,5 @@
 
-from lib.media import Media
+from models.media import Media
 
 
 class Movie(Media):

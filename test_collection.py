@@ -1,22 +1,9 @@
 
-from lib.movie import Movie
-from lib.movie_collection import MovieCollection
+from models.movie_collection import MovieCollection
+from utils.storage import MovieStorage
 
-
-collection = MovieCollection()
-
-movie1 = Movie("Black Panther", "Ryan Coogler", "Action", 2018)
-movie1.rating = 9
-movie1.mark_watched()
-
-movie2 = Movie("The Lion King", "Jon Favreau", "Adventure", 2019)
-movie2.rating = 8
-
-movie3 = Movie("Wonder Woman", "Patty Jenkins", "Action", 2017)
-
-collection.add_movie(movie1)
-collection.add_movie(movie2)
-collection.add_movie(movie3)
+storage = MovieStorage("data/movies.json")
+collection = storage.load_movies()
 
 print("\nALL MOVIES")
 for movie in collection.get_all_movies():

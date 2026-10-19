@@ -2,12 +2,12 @@
 import json
 from pathlib import Path
 
-from lib.movie import Movie
-from lib.movie_collection import MovieCollection
+from models.movie import Movie
+from models.movie_collection import MovieCollection
 
 
 class MovieStorage:
-    def __init__(self, filename="movies.json"):
+    def __init__(self, filename="data/movies.json"):
         self.filename = Path(filename)
 
     def save_movies(self, collection):

@@ -1,5 +1,5 @@
 
-from lib.movie import Movie
+from models.movie import Movie
 
 
 movie = Movie("Black Panther", "Ryan Coogler", "Action", 2018)
